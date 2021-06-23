@@ -1,0 +1,14 @@
+version: "3"
+services: 
+    portainer: 
+        image: portainer/portainer-ce
+        container_name: DB-Youtube-dl
+        hostname: YTDownloader
+        volumes: 
+            - /video/destination:/output
+        environment:
+            dbhost: something
+            dbname: something
+            dbuser: something
+            dbpass: something
+        restart: no
