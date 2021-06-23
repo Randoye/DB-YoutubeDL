@@ -8,7 +8,7 @@ you need a database with a table named 'youtube' and you need 3 columns in this 
 - url
 
 After that, you need to launch the container via this docker-compose file : 
-"""
+```yaml
 version: "3"
 services: 
     portainer: 
@@ -23,4 +23,4 @@ services:
             dbuser: something
             dbpass: something
         restart: no
-"""
+```
